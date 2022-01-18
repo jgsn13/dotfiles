@@ -1,0 +1,59 @@
+* Some requirements for all GNU/Linux distributions I test
+** Fonts that I currently have installed in my system
+- Fira Code Nerd Font
+- Hack Nerd Font
+- Iosevka Nerd Font
+- JetBrains Mono Nerd Font
+- Noto Color Emoji
+- Victor Mono Nerd Font
+- Victor Mono All
+** Themes, Icons and Cursors
+- Qogir
+- Dracula Cursors
+- Nordic Darker
+- Qogir Dark
+- Tela (Circe)
+** Some programs written in rust that I like
+- lsd / exa / nat  -> ls
+- procs -> ps
+- gping -> ping
+- ripgrep -> grep
+- fd -> find
+- bat -> cat
+- xh / rural -> curl
+- fnm / volta -> nvm
+- zellij -> tmux
+- bottom - top
+- please - sudo
+
+** Programs that I'm currently using in any GNU/Linux distribution
+- dwm
+- dmenu
+- st
+- slock
+- scrot
+- dunst
+- alsa-utils
+- xclip
+- Rofi
+- Neovim/Vim
+- Neovim Qt
+- Helix
+- GNU Emacs
+- Luakit
+- Firefox
+- Brave Browser
+- Postman
+- Pcmanfm
+- Ranger
+- Vifm
+- SimpleScreenRecorder
+- mpv
+- vlc
+- Zathura
+- Kitty
+- QBittorrent
+- Viewnior
+- Picom
+- LibreOffice
+- Lxappearance
