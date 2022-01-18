@@ -1,0 +1,11 @@
+theme = "gruvbox"
+
+[editor]
+scrolloff = 10
+shell = ["fish", "-c"]
+line-number = "relative"
+true-color = true
+completion-trigger-len = 1
+
+[lsp]
+display-messages = true

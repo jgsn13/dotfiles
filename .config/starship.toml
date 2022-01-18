@@ -1,0 +1,12 @@
+add_newline = false
+
+[character]
+# success_symbol = " [ﬦ](bold green)"
+# error_symbol = " [ﬦ](bold red)"
+vicmd_symbol = " [](bold green)"
+
+[nodejs]
+detect_files = ["package.json"]
+
+[deno]
+detect_files = ["deno.json"]
