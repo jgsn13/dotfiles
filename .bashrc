@@ -107,4 +107,4 @@ export PATH=$HOME/.emacs.d/bin:$PATH
 
 # FNM
 export PATH=$HOME/.fnm:$PATH
-eval "$(fnm env)"
+# eval "$(fnm env)"
