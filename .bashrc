@@ -63,15 +63,6 @@ PROMPT_COMMAND='__set_prompt'
 # Set the keybindings to vi mode
 set -o vi
 
-# XBPS stuff
-alias xbi='sudo xbps-install'
-alias xbr='sudo xbps-remove'
-alias xbq='sudo xbps-query'
-alias xbu='sudo xbps-install -Suv'
-
-# Python
-alias black="python -m black"
-
 # System
 export PATH=/sbin:$PATH
 export PATH=/usr/sbin:$PATH
@@ -96,14 +87,8 @@ export PATH=$DENO_INSTALL/bin:$PATH
 export LOCAL_PATH=$HOME/.local
 export PATH=$LOCAL_PATH/bin:$PATH
 
-# Ruby
-export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
-
 # Neovim QT
 export NVIM_QT_RUNTIME_PATH=/home/joaquim/.config/nvim-qt/runtime
-
-# Emacs
-export PATH=$HOME/.emacs.d/bin:$PATH
 
 # FNM
 export PATH=$HOME/.fnm:$PATH
