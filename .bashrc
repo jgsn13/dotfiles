@@ -93,3 +93,4 @@ export NVIM_QT_RUNTIME_PATH=/home/joaquim/.config/nvim-qt/runtime
 # FNM
 export PATH=$HOME/.fnm:$PATH
 # eval "$(fnm env)"
+. "$HOME/.cargo/env"
