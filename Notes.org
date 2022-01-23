@@ -74,3 +74,9 @@
    - wpa_supplicant basic usage
      + wpa_passphrase "SSID" "password" >> /etc/wpa_supplicant-wlp3s0.conf
      + wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant-wlp3s0.conf
+
+*** Archlinux
+ - Programs you'll may need
+   - dosfstools
+   - os-prober
+   - xf86-video-{intel,amd,...}
