@@ -57,3 +57,20 @@
 - Picom
 - LibreOffice
 - Lxappearance
+** Tips
+*** Password stuff
+ - faillock
+   + faillock
+   + faillock --recheck
+ - /etc/sudoers
+   + %wheel ALL=(ALL) ALL
+   + %wheel ALL=(ALL) NOPASSWD: /sbin/shutdown, /sbin/reboot
+*** Internet Connection
+ - dhcpcd is mandatory for all internet connections.
+ - dhcpcd and wpa_supplicant are mandatory for wired connetions
+   - You may need this settings if have some throuble with wpa_supplicant initialization on systemd (or any other init/servive manager):
+     + systemctl enable dhcpcd@wlp3s0
+     + systemctl enable wpa_supplicant@wlp3s0
+   - wpa_supplicant basic usage
+     + wpa_passphrase "SSID" "password" >> /etc/wpa_supplicant-wlp3s0.conf
+     + wpa_supplicant -B -i wlp3s0 -c /etc/wpa_supplicant-wlp3s0.conf
