@@ -80,3 +80,7 @@
    - dosfstools
    - os-prober
    - xf86-video-{intel,amd,...}
+*** Gentoo
+ - Don't forgot to add $USER to group video and input
+   - gpasswd -a $USER video
+   - gpasswd -a $USER input
