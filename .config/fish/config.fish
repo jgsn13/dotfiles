@@ -26,7 +26,7 @@ function fish_prompt
     set_color normal
     echo -n ' on'
     set_color red 
-    echo -n "$git_branch"
+    echo -n "$git_branch" end
   end
   echo ''
   set_color green
@@ -48,7 +48,7 @@ alias xbq='sudo xbps-query'
 alias xbu='sudo xbps-install -Suv'
 
 # Python
-alias black="python -m black"
+#alias black="python -m black"
 
 # System
 export PATH="/sbin:$PATH"
@@ -62,8 +62,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export RUST_BACKTRACE=full
 
 # Java
-export JDTLS_HOME="/home/joaquim/LangServers/jdtls"
-export JAVA_HOME="/usr/lib/jvm/openjdk11"
+export JDTLS_HOME="/home/joaquim/LanguageServers/jdtls"
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Deno
@@ -75,16 +75,16 @@ export LOCAL_PATH="$HOME/.local"
 export PATH="$LOCAL_PATH/bin:$PATH"
 
 # Ruby
-export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+#export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 # Neovim QT
-export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
+#export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
 
 # Emacs
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # Android
-export ANDROID_HOME="$HOME/Android/Sdk"
+#export ANDROID_HOME="$HOME/Android/Sdk"
 
 # FNM
 export PATH="$HOME/.fnm:$PATH"
