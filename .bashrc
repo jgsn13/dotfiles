@@ -76,7 +76,7 @@ export RUST_BACKTRACE=full
 
 # Java
 export JDTLS_HOME=$HOME/LangServers/jdtls
-export JAVA_HOME=/usr/lib/jvm/openjdk11
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Deno
