@@ -35,24 +35,19 @@ end
 
 # Vi key bindings
 function fish_user_key_bindings
-  fish_vi_key_bindings
+    fish_default_key_bindings -M insert
+    fish_vi_key_bindings insert
 end
+
+set fish_cursor_default "underscore"
+set fish_cursor_insert "underscore"
+set fish_cursor_visual "line"
 
 # Remove fish greeting
 set fish_greeting
 
-# XBPS stuff
-alias xbi='sudo xbps-install'
-alias xbr='sudo xbps-remove'
-alias xbq='sudo xbps-query'
-alias xbu='sudo xbps-install -Suv'
-
-# Python
-#alias black="python -m black"
-
-# System
-export PATH="/sbin:$PATH"
-export PATH="/usr/sbin:$PATH"
+# ASDF
+source ~/.asdf/asdf.fish
 
 # Yarn
 export PATH="(yarn global bin):$PATH"
@@ -63,7 +58,7 @@ export RUST_BACKTRACE=full
 
 # Java
 export JDTLS_HOME="/home/joaquim/LanguageServers/jdtls"
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+export JAVA_HOME="/usr/lib64/openjdk-17"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Deno
@@ -73,22 +68,6 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Local binaries
 export LOCAL_PATH="$HOME/.local"
 export PATH="$LOCAL_PATH/bin:$PATH"
-
-# Ruby
-#export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
-
-# Neovim QT
-#export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
-
-# Emacs
-export PATH="$HOME/.emacs.d/bin:$PATH"
-
-# Android
-#export ANDROID_HOME="$HOME/Android/Sdk"
-
-# FNM
-export PATH="$HOME/.fnm:$PATH"
-fnm env | source
 
 # Starship
 set -x starship_node_show_in_home false
