@@ -43,23 +43,12 @@ zstyle ':vcs_info:*' enable git
 
 # Set the keybindings to vi mode
 set -o vi #bindkey -v
-#function zle-line-init zle-keymap-select {
-#	RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-#	RPS2=$RPS1
-#	zle reset-prompt
-#}
-#zle -N zle-line-init
-#zle -N zle-keymap-select
 
 # History
-export HISTFILE=~/.zsh_history
-export HISTFILESIZE=1000000000
-export HISTSIZE=1000000000
-## Ensures that commands are added to the history immediately
-setopt INC_APPEND_HISTORY
-export HISTTIMEFORMAT="[%F %T] "
-## Add timestamp to history
-setopt EXTENDED_HISTORY
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
 ## Handle duplicated commands
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
@@ -88,10 +77,5 @@ export PATH=$DENO_INSTALL/bin:$PATH
 export LOCAL_PATH=$HOME/.local
 export PATH=$LOCAL_PATH/bin:$PATH
 
-# Neovim QT
-export NVIM_QT_RUNTIME_PATH=/home/joaquim/.config/nvim-qt/runtime
-
-# FNM
-export PATH=$HOME/.fnm:$PATH
 # eval "$(fnm env)"
 . "$HOME/.cargo/env"
