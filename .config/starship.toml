@@ -1,8 +1,8 @@
 add_newline = false
 
 [character]
-# success_symbol = " [ﬦ](bold green)"
-# error_symbol = " [ﬦ](bold red)"
+success_symbol = " [](bold green)"
+error_symbol = " [](bold red)"
 vicmd_symbol = " [](bold green)"
 
 [nodejs]
