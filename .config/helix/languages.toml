@@ -1,3 +1,40 @@
 [[language]]
 name = "rust"
 auto-format = true
+
+[[language]]
+name = "python"
+scope = "source.python"
+injection-regex = "python"
+file-types = ["py"]
+shebangs = ["python"]
+roots = []
+comment-token = "#"
+
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["c", "h"] # TODO: ["h"]
+roots = []
+comment-token = "//"
+
+language-server = { command = "clangd" }
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+shebangs = ["java"]
+roots = []
+comment-token = "//"
+
+# /home/joaquim/LanguageServers/jdtls
+language-server = { command = "java", args = ["-Declipse.application=org.eclipse.jdt.ls.core.id1", "-Dosgi.bundles.defaultStartLevel=4", "-Declipse.product=org.eclipse.jdt.ls.core.product", "-Dlog.level=ALL", "-noverify", "-Xmx1G", "-jar /home/joaquim/LanguageServers/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar", "-configuration /home/joaquim/LanguageServers/jdtls/config_linux", "-data /home/joaquim/LanguageServers/jdtls/workspace/test", "--add-modules=ALL-SYSTEM", "--add-opens java.base/java.util=ALL-UNNAMED", "--add-opens java.base/java.lang=ALL-UNNAMED"] }
+indent = { tab-width = 4, unit = "    " }
+
