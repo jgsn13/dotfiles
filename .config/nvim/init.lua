@@ -113,3 +113,6 @@ vim.api.nvim_exec(
 ]],
     false
 )
+
+-- Some color
+vim.cmd [[highlight SignColumn guibg=none]]
