@@ -4,5 +4,6 @@ ${HOME}/.fehbg &
 dwm_status_bar &
 setxkbmap us
 picom --experimental-backend &
-emacs --daemon &
+#emacs --daemon &
+emacs-29-vcs --daemon &
 exec dbus-run-session dwm

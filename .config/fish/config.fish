@@ -43,11 +43,23 @@ set fish_cursor_default "underscore"
 set fish_cursor_insert "underscore"
 set fish_cursor_visual "line"
 
+# Some aliases
+alias vim="nvim"
+alias ls="lsd"
+
 # Remove fish greeting
 set fish_greeting
 
+# Use this flag to install python (asdf or pyenv) with shared library.
+# This is required for some applications:
+export PYTHON_CONFIGURE_OPTS="--enable-shared"
+
 # ASDF
 source ~/.asdf/asdf.fish
+export PATH="$HOME/.asdf/installs/nodejs/16.14.0/.npm/bin:$PATH"
+
+# Pyenv
+export PATH="$HOME/.pyenv/shims:$PATH"
 
 # Yarn
 export PATH="(yarn global bin):$PATH"
@@ -68,6 +80,9 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Local binaries
 export LOCAL_PATH="$HOME/.local"
 export PATH="$LOCAL_PATH/bin:$PATH"
+
+# Neovim QT
+export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
 
 # Starship
 set -x starship_node_show_in_home false

@@ -1,4 +1,4 @@
-PS1="\[\033[01;32m\]\h\[\033[01;34m\] \w \$\[\033[00m\] "
+PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
 			      
 # Set the keybindings to vi mode
 set -o vi
@@ -17,6 +17,11 @@ export LOCAL_PATH=$HOME/.local
 export PATH=$LOCAL_PATH/bin:$PATH
 
 # Some aliases
-alias vim="nvim"
+#alias vim="nvim"
+alias ll="ls -la"
 
 . "$HOME/.cargo/env"
+
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
