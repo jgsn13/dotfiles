@@ -1,9 +1,9 @@
 xsetroot -cursor_name left_ptr &
 xset r rate 320 60 &
-${HOME}/.fehbg &
-dwm_status_bar &
-setxkbmap us
-picom --experimental-backend &
+#${HOME}/.fehbg &
+#dwm_status_bar &
+setxkbmap br
+#picom --experimental-backend &
 #emacs --daemon &
-emacs-29-vcs --daemon &
-exec dbus-run-session dwm
+#emacs-29-vcs --daemon &
+exec startlxqt 
