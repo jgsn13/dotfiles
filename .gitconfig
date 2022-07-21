@@ -1,0 +1,12 @@
+[user]
+	email = joaquim.ibi@gmail.com
+	name = Joaquim Gregório da Silva Neto
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[alias]
+	s = !git status -s
+	c = !git add . && git commit -m
+	amend = !git add . && git commit --amend --no-edit
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s %C(cyan)[%cn] %C(green)%cr'
