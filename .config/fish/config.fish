@@ -44,11 +44,12 @@ set fish_cursor_insert "underscore"
 set fish_cursor_visual "line"
 
 # Some aliases
-alias vim="nvim"
 alias ls="lsd"
 
 # Remove fish greeting
 set fish_greeting
+
+export EDITOR=vim
 
 # Use this flag to install python (asdf or pyenv) with shared library.
 # This is required for some applications:
@@ -56,7 +57,7 @@ export PYTHON_CONFIGURE_OPTS="--enable-shared"
 
 # ASDF
 source ~/.asdf/asdf.fish
-export PATH="$HOME/.asdf/installs/nodejs/16.14.0/.npm/bin:$PATH"
+export PATH="$HOME/.asdf/installs/nodejs/16.16.0/.npm/bin:$PATH"
 
 # Pyenv
 export PATH="$HOME/.pyenv/shims:$PATH"
