@@ -1,3 +1,33 @@
+#[[language]]
+#name = "mylang"
+#scope = "scope.mylang"
+#injection-regex = "^mylang$"
+#file-types = ["mylang", "myl"]
+#comment-token = "#"
+#indent = { tab-width = 2, unit = "  " }
+#language-server = { command = "mylang-lsp", args = ["--stdio"] }[[language]]
+
+[[language]]
+name = "javascript"
+file-types = ["js", "jsx"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+language-server = { command = "typescript-language-server", args = ["--stdio"] }
+
+[[language]]
+name = "typescript"
+file-types = ["ts", "tsx"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+language-server = { command = "typescript-language-server", args = ["--stdio"] }
+
+[[language]]
+name = "json"
+file-types = ["json"]
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+language-server = { command = "vscode-json-language-server", args = ["--stdio"] }
+
 [[language]]
 name = "rust"
 auto-format = true
