@@ -58,6 +58,7 @@ export PYTHON_CONFIGURE_OPTS="--enable-shared"
 # ASDF
 source ~/.asdf/asdf.fish
 export PATH="$HOME/.asdf/installs/nodejs/16.16.0/.npm/bin:$PATH"
+export PATH="$HOME/.asdf/installs/python/3.10.0/bin:$PATH"
 
 # Pyenv
 export PATH="$HOME/.pyenv/shims:$PATH"
@@ -81,6 +82,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Local binaries
 export LOCAL_PATH="$HOME/.local"
 export PATH="$LOCAL_PATH/bin:$PATH"
+export PATH="$LOCAL_PATH/share/bin:$PATH"
 
 # Neovim QT
 export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
