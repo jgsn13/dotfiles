@@ -1,3 +1,4 @@
+#!/bin/sh
 xsetroot -cursor_name left_ptr &
 xset r rate 320 60 &
 ${HOME}/.fehbg &
