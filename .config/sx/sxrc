@@ -3,8 +3,8 @@ xsetroot -cursor_name left_ptr &
 xset r rate 320 60 &
 ${HOME}/.fehbg &
 dwm_status_bar &
-setxkbmap br
-#picom --experimental-backend &
+setxkbmap br &
+picom --corner-radius 5 &
 dunst &
 #emacs --daemon &
 #emacs-29-vcs --daemon &
