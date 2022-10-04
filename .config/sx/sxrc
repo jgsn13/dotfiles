@@ -6,6 +6,7 @@ dwm_status_bar &
 setxkbmap br &
 picom --corner-radius 5 &
 dunst &
+xautolock -time 2 -locker slock &
 #emacs --daemon &
 #emacs-29-vcs --daemon &
 #exec startlxqt 
