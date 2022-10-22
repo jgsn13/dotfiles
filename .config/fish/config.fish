@@ -49,7 +49,7 @@ alias ls="lsd"
 # Remove fish greeting
 set fish_greeting
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # Use this flag to install python (asdf or pyenv) with shared library.
 # This is required for some applications:
