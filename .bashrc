@@ -1,4 +1,4 @@
-PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
+PS1="\[\033[01;32m\]\u\[\033[01;31m\]@\[\033[01;33m\]\h\[\033[01;34m\] \w \$\[\033[00m\] "
 			      
 # Set the keybindings to vi mode
 set -o vi
@@ -6,11 +6,6 @@ set -o vi
 # Rust (Cargo)
 export PATH=$HOME/.cargo/bin:$PATH
 export RUST_BACKTRACE=full
-
-# Java
-export JDTLS_HOME=$HOME/LangServers/jdtls
-export JAVA_HOME=/usr/lib/jvm/openjdk-bin-8
-export PATH=$JAVA_HOME/bin:$PATH
 
 # Local binaries
 export LOCAL_PATH=$HOME/.local
