@@ -4,7 +4,7 @@ xset r rate 320 60 &
 ${HOME}/.fehbg &
 dwm_status_bar &
 setxkbmap br &
-picom --corner-radius 5 &
+#picom --corner-radius 5 &
 dunst &
 xautolock -time 2 -locker slock &
 #emacs --daemon &
