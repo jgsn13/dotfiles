@@ -71,8 +71,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export RUST_BACKTRACE=full
 
 # Java
-export JDTLS_HOME="/home/joaquim/LanguageServers/jdtls"
-export JAVA_HOME="/usr/lib64/openjdk-17"
+# export JDTLS_HOME="/home/joaquim/LanguageServers/jdtls"
+export JAVA_HOME="/home/joaquim/.asdf/installs/java/openjdk-17.0.2"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Deno
