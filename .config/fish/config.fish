@@ -2,7 +2,7 @@
 if status --is-login
   if test -z "$DISPLAY" -a (tty) = /dev/tty1
     clear
-    exec sx
+    exec startx
   end
 end
 
@@ -60,6 +60,10 @@ source ~/.asdf/asdf.fish
 export PATH="$HOME/.asdf/installs/nodejs/16.16.0/.npm/bin:$PATH"
 export PATH="$HOME/.asdf/installs/python/3.10.0/bin:$PATH"
 
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init -)"
+alias php7="~/.asdf/installs/php/7.4.30/bin/php"
+
 # Pyenv
 export PATH="$HOME/.pyenv/shims:$PATH"
 
@@ -79,6 +83,10 @@ export PATH="$JAVA_HOME/bin:$PATH"
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # Local binaries
 export LOCAL_PATH="$HOME/.local"
 export PATH="$LOCAL_PATH/bin:$PATH"
@@ -90,3 +98,8 @@ export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
 # Starship
 set -x starship_node_show_in_home false
 starship init fish | source
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
+

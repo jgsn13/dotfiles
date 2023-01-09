@@ -11,3 +11,4 @@ xautolock -time 2 -locker slock &
 #emacs-29-vcs --daemon &
 #exec startlxqt 
 exec dwm
+#/usr/share/unityx/unityx
