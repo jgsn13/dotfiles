@@ -72,7 +72,7 @@ export PATH="(yarn global bin):$PATH"
 
 # Rust (Cargo)
 export PATH="$HOME/.cargo/bin:$PATH"
-export RUST_BACKTRACE=full
+#export RUST_BACKTRACE=full
 
 # Java
 # export JDTLS_HOME="/home/joaquim/LanguageServers/jdtls"
