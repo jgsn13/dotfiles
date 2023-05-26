@@ -15,7 +15,6 @@ export PATH=$LOCAL_PATH/bin:$PATH
 #alias vim="nvim"
 alias ll="ls -la"
 
-. "$HOME/.cargo/env"
 
 # ASDF
 . $HOME/.asdf/asdf.sh
