@@ -1,3 +1,0 @@
-* dotfiles
-** I'm currently using [[https://www.gnu.org/software/stow/][GNU Stow]] to manage them.
-** Feel free to use them.
