@@ -60,10 +60,6 @@ source ~/.asdf/asdf.fish
 export PATH="$HOME/.asdf/installs/nodejs/16.16.0/.npm/bin:$PATH"
 export PATH="$HOME/.asdf/installs/python/3.10.0/bin:$PATH"
 
-export PATH="$HOME/.phpenv/bin:$PATH"
-eval "$(phpenv init -)"
-alias php7="~/.asdf/installs/php/7.4.30/bin/php"
-
 # Pyenv
 export PATH="$HOME/.pyenv/shims:$PATH"
 
