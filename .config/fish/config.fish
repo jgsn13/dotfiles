@@ -95,9 +95,7 @@ export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
 set -x starship_node_show_in_home false
 starship init fish | source
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+zoxide init fish | source
 
 # TokyoNight Color Palette
 set -l foreground c0caf5
