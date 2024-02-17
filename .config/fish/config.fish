@@ -70,6 +70,9 @@ export PATH="(yarn global bin):$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 #export RUST_BACKTRACE=full
 
+# Bob (neovim)
+export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+
 # Java
 # export JDTLS_HOME="/home/joaquim/LanguageServers/jdtls"
 export JAVA_HOME="/home/joaquim/.asdf/installs/java/openjdk-17.0.2"
@@ -90,6 +93,10 @@ export PATH="$LOCAL_PATH/share/bin:$PATH"
 
 # Neovim QT
 export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
+
+# Fly
+export FLYCTL_INSTALL="$HOME/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 # Starship
 set -x starship_node_show_in_home false
@@ -131,3 +138,6 @@ set -g fish_pager_color_prefix $cyan
 set -g fish_pager_color_completion $foreground
 set -g fish_pager_color_description $comment
 set -g fish_pager_color_selected_background --background=$selection
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/joaquim/google-cloud-sdk/path.fish.inc' ]; . '/home/joaquim/google-cloud-sdk/path.fish.inc'; end
