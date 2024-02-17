@@ -1,4 +1,4 @@
-theme = "onedark"
+theme = "gruvbox_dark_hard"
 
 [editor]
 scrolloff = 10
@@ -6,6 +6,7 @@ shell = ["fish", "-c"]
 line-number = "relative"
 true-color = true
 completion-trigger-len = 1
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
