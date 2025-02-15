@@ -45,6 +45,7 @@ set fish_cursor_visual "line"
 
 # Some aliases
 alias ls="lsd"
+alias ssh="kitten ssh"
 
 # Remove fish greeting
 set fish_greeting
@@ -75,7 +76,7 @@ export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 
 # Java
 # export JDTLS_HOME="/home/joaquim/LanguageServers/jdtls"
-export JAVA_HOME="/home/joaquim/.asdf/installs/java/openjdk-17.0.2"
+export JAVA_HOME="/home/joaquim/.asdf/installs/java/adoptopenjdk-8.0.442+6"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Deno
@@ -97,6 +98,9 @@ export NVIM_QT_RUNTIME_PATH="/home/joaquim/.config/nvim-qt/runtime"
 # Fly
 export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+# ANDROID_HOME
+export ANDROID_HOME="$HOME/Android/Sdk"
 
 # Starship
 set -x starship_node_show_in_home false
