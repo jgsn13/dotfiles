@@ -19,3 +19,4 @@ alias ll="ls -la"
 # ASDF
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+. "$HOME/.cargo/env"

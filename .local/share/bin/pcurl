@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Check if URL is provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <URL> [curl_options]"
+    exit 1
+fi
+
+# Execute cURL and capture the output
+response=$(curl -s "$@")
+
+# Check if the response is valid JSON
+if echo "$response" | jq empty 2>/dev/null; then
+    echo "$response" | jq .
+else
+    echo "$response"
+fi
